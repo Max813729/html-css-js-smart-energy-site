@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>低圧太陽光O&M LP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="https://www.smart-energy.jp/">
+    <div class="header_logo">
+      <img src="images/logo_header.png" alt="ロゴ" width="100%" height="100%"/>
+    </div>
+  </a>
+  <!-- ファーストビュー -->
+  <section class="fv">
+    <img src="images/Group 289.webp" alt="ファーストビュー" class="fv-bg pc">
+    <img src="images/Group 289 (2).webp" alt="ファーストビュー" class="fv-bg sp">
+
+      <div class="form-box">
+        <div class="title-img"><img src="images/mitsumori.webp"></div>
+        <form action="send.php" method="POST">
+          <div class="form-group">
+            <label for="name">名前</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="company">会社名</label>
+            <input type="text" id="company" name="company">
+          </div>
+      
+          <div class="form-group">
+            <label for="address">住所</label>
+            <input type="text" id="address" name="address">
+          </div>
+      
+          <div class="form-group">
+            <label for="tel">電話番号</label>
+            <input type="tel" id="tel" name="tel">
+          </div>
+      
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="count">発電所の所有件数</label>
+            <input type="text" id="count" name="count">
+          </div>
+      
+          <div class="form-group">
+            <label for="prefecture">発電所がある都道府県</label>
+            <select id="prefecture" name="prefecture" required>
+              <option value="" disabled selected>都道府県を選択</option>
+              <option value="北海道">北海道</option>
+              <option value="青森県">青森県</option>
+              <option value="岩手県">岩手県</option>
+              <option value="宮城県">宮城県</option>
+              <option value="秋田県">秋田県</option>
+              <option value="山形県">山形県</option>
+              <option value="福島県">福島県</option>
+              <option value="茨城県">茨城県</option>
+              <option value="栃木県">栃木県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都">東京都</option>
+              <option value="神奈川県">神奈川県</option>
+              <option value="新潟県">新潟県</option>
+              <option value="富山県">富山県</option>
+              <option value="石川県">石川県</option>
+              <option value="福井県">福井県</option>
+              <option value="山梨県">山梨県</option>
+              <option value="長野県">長野県</option>
+              <option value="岐阜県">岐阜県</option>
+              <option value="静岡県">静岡県</option>
+              <option value="愛知県">愛知県</option>
+              <option value="三重県">三重県</option>
+              <option value="滋賀県">滋賀県</option>
+              <option value="京都府">京都府</option>
+              <option value="大阪府">大阪府</option>
+              <option value="兵庫県">兵庫県</option>
+              <option value="奈良県">奈良県</option>
+              <option value="和歌山県">和歌山県</option>
+              <option value="鳥取県">鳥取県</option>
+              <option value="島根県">島根県</option>
+              <option value="岡山県">岡山県</option>
+              <option value="広島県">広島県</option>
+              <option value="山口県">山口県</option>
+              <option value="徳島県">徳島県</option>
+              <option value="香川県">香川県</option>
+              <option value="愛媛県">愛媛県</option>
+              <option value="高知県">高知県</option>
+              <option value="福岡県">福岡県</option>
+              <option value="佐賀県">佐賀県</option>
+              <option value="長崎県">長崎県</option>
+              <option value="熊本県">熊本県</option>
+              <option value="大分県">大分県</option>
+              <option value="宮崎県">宮崎県</option>
+              <option value="鹿児島県">鹿児島県</option>
+              <option value="沖縄県">沖縄県</option>
+            </select>
+          </div>
+      
+          <button type="submit">送信する</button>
+        </form>
+      </div>
+  </section>
+
+  <!-- お悩みセクション -->
+  <section class="worries">
+    <div class="overray1">
+    <p class="worry-title">発電所の運営・メンテナンスで</p>
+    <p class="worry-subtitle pc">こんな<span>お悩み</span>ありませんか？</p>
+    <p class="worry-subtitle sp">こんな<span>お悩み</span><br>ありませんか？</p>
+
+    <div class="worry-wrapper pc">
+      <img src="images/Group 298.webp" alt="人物イラスト" class="people-img">
+    </div>
+    <div class="worry-wrapper sp">
+      <img src="images/Group 311.png" alt="人物イラスト" class="people-img">
+    </div>
+  </div>
+  </section>
+
+  <!-- 解決セクション -->
+  <section class="solution">
+    <img src="images/93474343-d798-42df-ab79-95adda328bc4.jpg" alt="解決背景" class="solution-bg">
+    <div class="solution-banner pc">
+      <img src="images/Group 270 (1).png" alt="SMART ENERGYが解決します！">
+    </div>
+    <div class="solution-banner sp">
+      <img src="images/Group 312.png" alt="SMART ENERGYが解決します！">
+    </div>
+    <img src="images/Vector 2 (1).png" alt="背景" class="solution-bg1">
+  </section>
+
+  <section class="reasons">
+    <div class="overray1">
+      <div class="title1-img">
+    <img src="images/Group 271 (2).png">
+  </div>
+
+    <div class="reason-box">
+      <div class="reason-item pc">
+        <img src="images/Group 24.png" alt="窓口一つで発電所の管理を丸ごとサポート">
+        <div class="reason-text">
+          <p>窓口一つで発電所の管理を<br><span class="highlight">丸ごとサポート</span></p>
+          <span class="number number1">01</span>
+        </div>
+      </div>
+
+      <div class="reason-item pc">
+        <img src="images/Group 24 (1).png" alt="信頼の技術力で国内トップシェア">
+        <div class="reason-text">
+          <p>“信頼の技術力”で国内<br><span class="highlight">トップシェア</span></p>
+          <span class="number number1">02</span>
+        </div>
+      </div>
+
+      <div class="reason-item pc">
+        <img src="images/Group 24 (2).png" alt="独自の管理システムMISORA">
+        <div class="reason-text">
+          <p>お客様の声から生まれた<br>独自の管理システム<br><span class="highlight highlight1">MISORA</span></p>
+          <span class="number">03</span>
+        </div>
+      </div>
+
+      <div class="reason-item sp">
+       
+        <div class="reason-text">
+          <p>窓口一つで発電所の管理を<br><span class="highlight">丸ごとサポート</span></p>
+          <span class="number number1">01</span>
+        </div>
+        <img src="images/Group 24.png" alt="窓口一つで発電所の管理を丸ごとサポート">
+      </div>
+
+      <div class="reason-item sp">
+       
+        <div class="reason-text">
+          <p>“信頼の技術力”で国内<br><span class="highlight">トップシェア</span></p>
+          <span class="number number1">02</span>
+        </div>
+        <img src="images/Group 24 (1).png" alt="信頼の技術力で国内トップシェア">
+      </div>
+
+      <div class="reason-item sp">
+       
+        <div class="reason-text">
+          <p>お客様の声から生まれた<br>独自の管理システム<br><span class="highlight highlight1">MISORA</span></p>
+          <span class="number">03</span>
+        </div>
+        <img src="images/Group 24 (2).png" alt="独自の管理システムMISORA">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- サポート詳細セクション -->
+  <section class="support-detail">
+    <div class="overray1">
+    <div class="point-title">
+      <div class="point-img"><img src="images/Group 28.png" ></div>
+      <h3>窓口ひとつ<span>で、</span><br>発電所<span>の</span>管理<span>を</span>丸ごとサポート</h3>
+      <p class="lead pc">点検も緊急対応も、スピードも品質も、すべて任せて安心。</p>
+      <p class="lead sp">点検も緊急対応も、スピードも品質も、<br>すべて任せて安心。</p>
+      <p class="sub pc">【スマートエナジーなら、事業者様の幅広いお悩みを解決できます。】</p>
+      <p class="sub sp"><img src="images/Group 224 (1) (1).png" style="width: 100%;"></p>
+    </div>
+
+    <div class="icons-group top-icons pc">
+      <div class="icon-item">
+        <img src="images/Group 283.png" alt="目視検査">
+        <p>目視検査<br><span>発電所内に不備や異常がないか目視にて点検を行います</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 284.png" alt="測定検査">
+        <p>測定検査<br><span>測定器を使用してパネルやPCS等の不良を検出します</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 285.png" alt="除草作業">
+        <p>除草作業<br><span>発電所内の除草はもちろん、フェンス外1mまでの除草を実施し、近隣クレームを防ぎます。</span></p>
+      </div>
+    </div>
+    
+
+    <div class="icons-group top-icons sp">
+      <div class="icon-item">
+        <img src="images/Group 283.png" alt="目視検査">
+        <p>目視検査<br><span>発電所内に不備や異常がないか目視にて点検を行います</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 284.png" alt="測定検査">
+        <p>測定検査<br><span>測定器を使用してパネルやPCS等の不良を検出します</span></p>
+      </div>
+    </div>
+    <div class="icons-group top-icons sp">
+      <div class="icon-item">
+        <img src="images/Group 285.png" alt="除草作業">
+        <p>除草作業<br><span>発電所内の除草はもちろん、フェンス外1mまでの除草を実施し、近隣クレームを防ぎます。</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 286.png" alt="緊急駆けつけ">
+        <p>緊急駆けつけ<br><span>発電所内にて機器の故障などが見られた際に現場へ向かい調査します。</span></p>
+      </div>
+
+    </div>
+    <div class="icons-group top-icons sp">
+      <div class="icon-item">
+        <img src="images/Group 290.png" alt="発電レポート">
+        <p>発電レポート<br><span>発電所の運転状況うあ発電量について、レポートを自動作成します。</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 291.png" alt="遠隔監視">
+        <p>遠隔監視<br><span>発電所内機器に不具合が起こっていないか遠隔にて監視を行います</span></p>
+      </div>
+
+    </div>
+    <div class="icons-group top-icons sp">
+      <div class="icon-item icon-item-last">
+        <img src="images/Group 293.png" alt="MISORA">
+        <p>MISORA<br><span>報告書・請求書・契約書類など総合的な管理を行います。</span></p>
+      </div>
+
+    </div>
+
+
+    <div class="icons-group bottom-icons pc">
+      <div class="icon-item">
+        <img src="images/Group 286.png" alt="緊急駆けつけ">
+        <p>緊急駆けつけ<br><span>発電所内にて機器の故障などが見られた際に現場へ向かい調査します。</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 290.png" alt="発電レポート">
+        <p>発電レポート<br><span>発電所の運転状況うあ発電量について、レポートを自動作成します。</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 291.png" alt="遠隔監視">
+        <p>遠隔監視<br><span>発電所内機器に不具合が起こっていないか遠隔にて監視を行います</span></p>
+      </div>
+      <div class="icon-item">
+        <img src="images/Group 293.png" alt="MISORA">
+        <p>MISORA<br><span>報告書・請求書・契約書類など総合的な管理を行います。</span></p>
+      </div>
+    </div>
+
+
+
+    <p class="note">※モニタリング業務実施のためには遠隔監視システムの導入が必要です。</p>
+  </div>
+  </section>
+
+  <section class="trouble">
+    <div class="overray1">
+    <div class="trouble-title-img"><img src="images/Group 298 (1).png" ></div>
+    <div class="trouble-content pc">
+      <img src="images/Group 299.png" alt="相談右" class="trouble-img right">
+    </div>
+    <div class="trouble-content sp">
+      <img src="images/Group 313.png" alt="相談右" class="trouble-img right">
+    </div>
+    <img src="images/Ellipse 15 (1).webp" alt="解決背景" class="solution-bg2">
+  </section>
+
+  <!-- パッケージ案内 -->
+  <section class="packages">
+    <p class="worry-title1 pc">スマートエナジーでおすすめの</p>
+    <p class="worry-subtitle1 pc">業務パッケージパターン</p>
+    <p class="worry-title1 sp">スマートエナジーで<br>おすすめの</p>
+    <p class="worry-subtitle1 sp">業務パッケージパターン</p>
+    <div class="packages-sub-img pc">
+     <img src="images/Group 303.png">
+    </div>
+    <div class="packages-sub-img sp">
+      <img src="images/Group 314.png">
+     </div>
+    <p class="nationwide">全国対応可能</p>
+
+    <div class="plans">
+      <div class="plan-box">
+        <div class="plan-box1"><img src="images/Group 300.png"></div>
+        <div class="plan-box2"><img src="images/Group 301.png"></div>
+      </div>
+    </div>
+    <div class="plas">
+      <img src="images/Group 130.png">
+    </div>
+
+    <div class="option">
+      <div class="plan-box3 pc"><img src="images/Group 302.png"></div>
+      <div class="plan-box3 sp"><img src="images/Group 232.png"></div>
+    </div>
+
+    <div class="quote-cta pc">
+      <div class="quote-cta1"><img src="images/Group 293 (1).webp"></div>
+      <a href="#" class="estimate-button">
+        <span>自社<span class="syort">に</span>最適<span class="syort">な</span>プラン<span class="syort">の</span>見積もり<span class="syort">をしたい</span></span>
+        <img src="images/hand.png" alt="指アイコン" class="finger-icon">
+      </a>
+      
+    </div>
+    <div class="quote-cta sp">
+      <div class="quote-cta1"><img src="images/Group 296 (1).png"></div>
+      <a href="#" class="estimate-button">
+        <span>自社<span class="syort">に</span>最適<span class="syort">な</span>プラン<span class="syort">の</span><br>見積もり<span class="syort">をしたい</span></span>
+        <img src="images/hand.png" alt="指アイコン" class="finger-icon">
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- 契約量セクション -->
+  <section class="contract">
+    <div class="point-img"><img src="images/Group 53.png" ></div>
+    <p class="worry-title2">“信頼の技術力”で</p>
+    <p class="worry-subtitle2">国内トップシェア</p>
+    <p class="contract-desc pc">
+      【業界を牽引するプロフェッショナル集団だからこその実績】
+    </p>
+    <p class="sub sp"><img src="images/Group 233 (1).png" style="width: 100%;"></p>
+    <div class="contract-box">
+      <div class="contract-img"><img src="images/Group 304 (1).png"></div>
+      <p class="source">※ 『PVeye』 2025年5月号より</p>
+    </div>
+  </section>
+
+
+  <!-- 選ばれる理由 セクション -->
+  <section class="reason">
+    <div class="reason-title-img">
+      <img src="images/Group 310.png">
+    </div>
+
+    <div class="box ">
+      <div class="left pc">
+       <img src="images/Group 63.png">
+      </div>
+    </div>
+
+    <div class="box pc">
+      <div class="right pc">
+        <img src="images/Group 62 (1).png">
+      </div>
+    </div>
+
+    <div class="box pc">
+      <div class="left pc">
+        <img src="images/Group 61.png">
+      </div>
+    </div>
+
+    <div class="box box1 sp">
+      <div class="left">
+       <img src="images/Group 315.png">
+      </div>
+    </div>
+
+    <div class="box box1 sp">
+      <div class="left">
+        <img src="images/Group 316.png">
+      </div>
+    </div>
+
+    <div class="box box1 sp">
+      <div class="left">
+        <img src="images/Group 317.png">
+      </div>
+    </div>
+
+    
+    <div class="back-img"><img src="images/Rectangle 48.png"></div>
+  </section>
+
+  <section class="support-detail">
+    <div class="overray1">
+    <div class="point-title3">
+      <div class="point-img"><img src="images/Group 64 (2).png" ></div>
+      <h3>請求・支払い業務、書類業務の
+        <br>一元管理を実現する独自サービス</h3>
+        <p class="misora">MISORA</p>
+      <p class="misora-sub">【発電所の管理工数を大幅削減！】</p>
+    </div>
+    <div class="misora-details">
+      <div class="misora-details-img"><img src="images/Group 66.png" ></div>
+      <div class="misora-details-img"><img src="images/Group 65.png" ></div>
+    </div>
+    <p class="misora-sub misora-sub1">各発電所のスケジュールは、MISORAで一元管理。<br>
+      お客様ともシステム上で常に共有されているため、情報共有がスムーズです。</p>
+  
+      <div class="misora-icon pc"><img src="images/Group 123 (1).webp" ></div>
+      <div class="misora-icon sp"><img src="images/Group 283 (3).webp" ></div>
+
+  </section>
+  <section class="section-header">
+    <h1>MISORAでできること</h1>
+  </section>
+
+  <section class="feature-box">
+    <div class="corner"></div>
+    <div class="feature-inner">
+      <div class="feature-text">
+        <h2 class="pc">契約書・報告書等、<br>ドキュメントの<br>効率的な管理</h2>
+        <h2 class="sp">契約書・報告書等、<br>ドキュメントの効率的な管理</h2>
+        <p class="pc">
+          MISORAのシステム上に契約書や報<br>告書をアップロードすることで、<br>
+システム上でコメントや承認等のフ<br>ローが完結し、検索性も上がり書類<br>対応工数が大幅に削減できます。
+        </p>
+        <p class="sp">
+          MISORAのシステム上に契約書や報告書をアップロードすることで、
+システム上でコメントや承認等のフローが完結し、検索性も上がり書類対応工数が大幅に削減できます。
+        </p>
+      </div>
+      <div class="feature-img">
+        <img src="images/Group 70.png" alt="アップロード図">
+      </div>
+ 
+        <div class="feature-number">
+          <img src="images/01 (4).png">
+        </div>
+      
+    </div>
+  </section>
+
+  <section class="feature-box feature-box1">
+    <div class="corner"></div>
+    <div class="feature-inner">
+      <div class="feature-text">
+        <h2>スケジュール・作業進捗等、<br>重要情報の可視化</h2>
+        <p class="pc">
+          各発電所のスケジュールをMISORA<br>上で管理し、作業進捗を分かりや<br>すく可視化することで、関係者への確<br>実かつ手軽な情報共有が可能です。
+        </p>
+        <p class="sp">
+          各発電所のスケジュールをMISORA上で管理し、作業進捗を分かりやすく可視化することで、関係者への確実かつ手軽な情報共有が可能です。
+        </p>
+      </div>
+      <div class="feature-img feature-img1">
+        <img src="images/Group 73.png" alt="スケジュール図">
+      </div>
+
+      <div class="feature-number">
+        <img src="images/02 (2).png">
+      </div>
+    </div>
+  </section>
+
+  <section class="performance">
+    <div class="overray1">
+    <div class="performance-content">
+      <div class="performance-title">
+        <img src="images/Group 74 (1).png">
+      </div>
+      <p class="performance-text pc">
+        スマートエナジーに切り替えたことで、<br>
+        どれくらい年間メンテナンス費用が節約できたか？
+      </p> 
+      <p class="performance-text sp">
+        スマートエナジーに切り替えたことで、<br>
+        どれくらい年間メンテナンス費用が<br>節約できたか？
+      </p>
+      <div class="result-box">
+        <div class="result-balloon pc"><img src="images/Group 284 (1).png"></div>
+        <div class="result-balloon sp"><img src="images/Group 288.png"></div>
+        <div class="result-flex pc">
+          <div class="result-percent">
+            <img src="images/Group 147 (1).png">
+          </div>
+            <div class="result-chart">
+              <img src="images/Group 283 (1) (1).png" alt="40%チャート">
+            </div>
+          </div>
+          <div class="result-flex sp">
+            <img src="images/Group 318 (1).png" alt="40%チャート">
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="faq-section">
+    <div class="faq-title-img">
+      <img src="images/Group 79 (1).png" alt="FAQタイトル画像">
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        屋根上に設置している<br class="sp">低圧発電システムのメンテナンスは<br class="sp">対応してもらえますか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        可能です。スマートエナジーでは野立て、屋根上の太陽光システムのメンテナンスを行っております。ご希望の点検内容等をご相談くださいませ。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        駆けつけは<br class="sp">どのくらいで来てくれますか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        弊社モニタリングセンターにて緊急駆け付け対応が必要と判断してから、原則３営業日以内に対応いたします。（弊社営業日起算）
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        どのような支払い方法がありますか？<br class="sp">口座振替は可能でしょうか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        年額払い・月額払い・四半期払いなど、複数の支払い方法に対応しております。また、口座振替はご対応しておりません。弊社システムのMISORAから請求書がアップロードされますのでダウンロードの上ご対応願います。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        MISORAシステム利用料は<br class="sp">発生しますか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        別途料金が発生することはございません。O&M業務委託料の費用に含んでおります。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        異常があった場合の対応は？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        駆けつけ対応時はブレーカーの再投入やパワコンのエラーリセットなどの1次対応を行います。機器故障などの場合、考えられる原因の報告を行います。2次対応（有償）については別途ご提案となります。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        経産省への申請や、<br class="sp">費用報告もしてくれるの？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        恐れ入りますが、経済産業省への各種申請・報告につきましては、お客様ご自身にてご対応いただきますようお願いいたします。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        MISORAシステム上で、<br class="sp">発電量は確認できますか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        発電量はMISORAシステム上ではなく、遠隔監視システム上で確認できます。遠隔監視業務にて不具合を確認した場合、MISORAシステムのイベント管理簿に登録いたします。なお、毎月の発電量レポートはMISORAシステム上にてご確認いただけます。
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        システムの利用規約はありますか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        はい、御座います。詳細は下記リンクよりご確認ください。<br>
+        <a href="https://www.smart-energy.jp/wp-content/uploads/2025/07/7b788d6005fc8713ec2689c15fc789a0.pdf" target="_blank">利用規約はこちら</a>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">
+        必要な情報は通知をいただきたいのですが<br class="sp">可能ですか？
+        <span class="toggle-icon">＋</span>
+      </button>
+      <div class="faq-answer">
+        はい。報告書提出、情報更新、請求書発行など必要に応じて通知のON/OFFを切り替えることが可能です。
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="news-box">
+      <h3 class="news-title">NEWS</h3>
+  
+      <div class="news-box1">
+        <p class="date">2025.07.18</p>
+  
+        <!--<a href="files/pdf" target="_blank" class="news-link">
+          <p class="title">後日ニュース公開</p>
+        </a>-->
+        
+          <p class="title">後日ニュース公開</p>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-top pc">
+      <p>まずはご相談だけでも大丈夫です。</p>
+      <p>無理な営業はいたしませんので、お気軽にお問い合わせください。</p>
+    </div>
+    <div class="contact-top sp">
+      <p>まずはご相談だけでも大丈夫です。</p>
+      <p>無理な営業はいたしませんので、<br>お気軽にお問い合わせください。</p>
+    
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-title-img">
+        <img src="images/Group 89 (2).png">
+            </div>
+            <form action="send.php" method="POST">
+              <div class="form-group">
+                <label for="name">名前</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="company">会社名</label>
+                <input type="text" id="company" name="company">
+              </div>
+          
+              <div class="form-group">
+                <label for="address">住所</label>
+                <input type="text" id="address" name="address">
+              </div>
+          
+              <div class="form-group">
+                <label for="tel">電話番号</label>
+                <input type="tel" id="tel" name="tel">
+              </div>
+          
+              <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+          
+              <div class="form-group form-group2">
+                <label for="count">発電所の所有件数</label>
+                <input type="text" id="count" name="count">
+              </div>
+          
+              <div class="form-group form-group2">
+                <label for="prefecture">発電所がある都道府県</label>
+                <select id="prefecture" name="prefecture" required>
+                  <option value="" disabled selected>都道府県を選択</option>
+                  <option value="北海道">北海道</option>
+                  <option value="青森県">青森県</option>
+                  <option value="岩手県">岩手県</option>
+                  <option value="宮城県">宮城県</option>
+                  <option value="秋田県">秋田県</option>
+                  <option value="山形県">山形県</option>
+                  <option value="福島県">福島県</option>
+                  <option value="茨城県">茨城県</option>
+                  <option value="栃木県">栃木県</option>
+                  <option value="群馬県">群馬県</option>
+                  <option value="埼玉県">埼玉県</option>
+                  <option value="千葉県">千葉県</option>
+                  <option value="東京都">東京都</option>
+                  <option value="神奈川県">神奈川県</option>
+                  <option value="新潟県">新潟県</option>
+                  <option value="富山県">富山県</option>
+                  <option value="石川県">石川県</option>
+                  <option value="福井県">福井県</option>
+                  <option value="山梨県">山梨県</option>
+                  <option value="長野県">長野県</option>
+                  <option value="岐阜県">岐阜県</option>
+                  <option value="静岡県">静岡県</option>
+                  <option value="愛知県">愛知県</option>
+                  <option value="三重県">三重県</option>
+                  <option value="滋賀県">滋賀県</option>
+                  <option value="京都府">京都府</option>
+                  <option value="大阪府">大阪府</option>
+                  <option value="兵庫県">兵庫県</option>
+                  <option value="奈良県">奈良県</option>
+                  <option value="和歌山県">和歌山県</option>
+                  <option value="鳥取県">鳥取県</option>
+                  <option value="島根県">島根県</option>
+                  <option value="岡山県">岡山県</option>
+                  <option value="広島県">広島県</option>
+                  <option value="山口県">山口県</option>
+                  <option value="徳島県">徳島県</option>
+                  <option value="香川県">香川県</option>
+                  <option value="愛媛県">愛媛県</option>
+                  <option value="高知県">高知県</option>
+                  <option value="福岡県">福岡県</option>
+                  <option value="佐賀県">佐賀県</option>
+                  <option value="長崎県">長崎県</option>
+                  <option value="熊本県">熊本県</option>
+                  <option value="大分県">大分県</option>
+                  <option value="宮崎県">宮崎県</option>
+                  <option value="鹿児島県">鹿児島県</option>
+                  <option value="沖縄県">沖縄県</option>
+                </select>
+              </div>
+          
+              <button type="submit">送信する</button>
+            </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="images/logo.png" alt="SMART ENERGY">
+  </footer>
+
+
+  <script>
+    const faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach((faq) => {
+      const question = faq.querySelector(".faq-question");
+      const answer = faq.querySelector(".faq-answer");
+      const icon = faq.querySelector(".toggle-icon");
+
+      icon.textContent = "＋"; // 初期状態で閉じている
+
+      question.addEventListener("click", () => {
+        const isOpen = question.classList.contains("active");
+
+        if (isOpen) {
+          question.classList.remove("active");
+          answer.classList.remove("open");
+          answer.style.maxHeight = null;
+          icon.textContent = "＋";
+        } else {
+          question.classList.add("active");
+          answer.classList.add("open");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.textContent = "ー";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

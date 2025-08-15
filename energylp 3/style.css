@@ -1,0 +1,2260 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #EFEFEF;
+}
+
+.header_logo {
+  width: 253px;
+  height: 126px;
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  padding: 16px 8px;
+  top: -14px;
+  border: 1px;
+}
+
+/* ファーストビュー */
+.fv {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.fv-bg {
+  width: 100%;
+  display: block;
+}
+
+.quote-cta2:hover {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+
+
+.form-box h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.form-box input,
+.form-box select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  background-color: #F4810C;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #975103eb;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+  font-weight: bold;
+
+}
+
+
+
+
+.form-box button:hover {
+  transform: translateY(4px);
+  /* 下に2px沈む */
+  box-shadow: 0 0px 0 #975103eb;
+}
+
+.title-img img {
+  width: 200px;
+}
+
+.title-img {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.overray1 {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* お悩みセクション */
+.worries {
+  text-align: center;
+  background-color: #E9F0FB;
+  padding-top: 134px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.worry-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #4B4949;
+  margin: 0;
+}
+
+.worry-subtitle {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  background-color: #2154A7;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 0px;
+  margin: 0px;
+  margin-bottom: 65px;
+}
+
+.worry-title1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4B4949;
+  margin: 0;
+  text-align: center;
+}
+
+.worry-subtitle1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #4B4949;
+  margin: 0;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.worry-title2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.worry-subtitle2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.worry-wrapper {
+  position: relative;
+  max-width: 1130px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.people-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.worry-img {
+  position: absolute;
+  width: 180px;
+  z-index: 2;
+}
+
+
+
+/* 解決セクション */
+.solution {
+  position: relative;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.solution-bg {
+  width: 100%;
+  display: block;
+  height: 700px;
+  background-color: #2154A7
+}
+
+.solution-bg1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.solution-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
+}
+
+.solution-banner img {
+  width: 920px;
+}
+
+
+.title1-img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title1-img img {
+  width: 600px;
+  margin-bottom: 70px;
+}
+
+
+.reasons {
+  text-align: center;
+  background-color: #fff;
+  padding-top: 106px;
+  padding-bottom: 114px;
+  position: relative;
+}
+
+.reason-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reason-item {
+  display: flex;
+  align-items: center;
+  background-color: #E9F0FB;
+  width: 95%;
+
+  margin-bottom: 40px;
+  position: relative;
+  box-shadow: 6px 6px 10px 0px rgb(126 126 126 / 40%);
+}
+
+.reason-item img {
+  width: 42%;
+  height: auto;
+}
+
+.reason-text {
+
+  flex: 1;
+  position: relative;
+}
+
+.reason-text p {
+  font-size: 28px;
+  line-height: normal;
+  font-weight: bold;
+  z-index: 10;
+  position: relative;
+  color: #4B4949;
+}
+
+.reason-text .highlight {
+  color: #2154A7;
+  font-size: 44px;
+}
+
+.highlight1 {
+  font-size: 64px !important;
+  line-height: 1;
+}
+
+.reason-text .number {
+  font-size: 200px;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-weight: bold;
+  line-height: 153px;
+  z-index: 0;
+}
+
+.reason-text .number1 {
+  font-size: 200px;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-weight: bold;
+  line-height: 108px;
+  z-index: 0;
+}
+
+.support-detail {
+  background: #EFEFEF;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.point-title {
+  margin: 0 auto 40px;
+}
+
+
+.point-img img {
+  width: 260px;
+}
+
+.point-title h3 {
+  font-size: 60px;
+  line-height: normal;
+  color: #4B4949;
+  margin: 0;
+}
+
+.point-title h3 span {
+  font-size: 52px;
+}
+
+.point-title .lead {
+  color: #2154A7;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.point-title .sub {
+  font-size: 28px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 60px;
+}
+
+.icons-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.top-icons {
+  margin: 0 auto 30px;
+
+}
+
+.bottom-icons {
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.icon-item {
+  width: 218px;
+  text-align: center;
+  font-size: 24px;
+  color: #2154A7;
+  font-weight: bold;
+}
+
+.icon-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  margin: 0px;
+
+}
+
+.icon-item span {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #4B4949;
+  font-weight: normal;
+  text-align: left;
+  width: 200px;
+
+}
+
+.note {
+  font-size: 20px;
+  color: #4B4949;
+  margin-top: 90px;
+  text-align: center;
+  font-weight: normal;
+}
+
+
+
+/* よくあるご相談 */
+.trouble-title-img img {
+  width: 610px;
+  margin-bottom: 40px;
+
+}
+
+.trouble {
+  text-align: center;
+
+  padding-top: 106px;
+  padding-bottom: 146px;
+  position: relative;
+  z-index: -1;
+  background-color: #fff;
+}
+
+.solution-bg2 {
+  width: 100%;
+  left: 0;
+
+  position: absolute;
+  z-index: -1;
+}
+
+
+.trouble-img {
+  width: 90%;
+  height: auto;
+}
+
+.speech-bubble {
+  background: #005bac;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 20px;
+  max-width: 400px;
+  font-size: 16px;
+}
+
+.speech-bubble strong {
+  font-size: 18px;
+}
+
+/* パッケージセクション */
+.packages-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.packages {
+  background: #E9F0FB;
+  padding-bottom: 106px;
+}
+
+.packages-sub-img img {
+  position: relative;
+  left: 0;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.tag {
+  background: #004b9b;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #444;
+}
+
+.nationwide {
+  text-align: center;
+
+  color: #80BF72;
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 32px;
+  border-right: solid 1px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+}
+
+
+
+/* 共通部分はまとめる */
+.nationwide::before,
+.nationwide::after {
+  content: "";
+  flex-grow: 1;
+  /* 線の伸び率 */
+  border-bottom: 3px solid #80BF72;
+}
+
+/* 左側の線 */
+.nationwide::before {
+  margin-right: 20px;
+  /* 線と文字の間のスペース */
+  padding-left: 15px;
+  /* 線の長さが、最低でも15px以上になるように余白をとる */
+}
+
+/* 右側の線 */
+.nationwide::after {
+  margin-left: 20px;
+  /* 線と文字の間のスペース */
+  padding-right: 15px;
+  /* 線の長さが、最低でも15px以上になるように余白をとる */
+}
+
+
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.plas img {
+  width: 68px;
+  margin: 0 auto;
+}
+
+.plas {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.option {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.plan-box {
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  max-width: 1000px;
+}
+
+.plan-box1 img {
+  width: 100%;
+}
+
+.plan-box2 img {
+  width: 100%;
+}
+
+.plan-box3 img {
+  width: 100%;
+}
+
+.plan-box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.plan-box span {
+  font-size: 13px;
+  color: #888;
+}
+
+.plan-box ul {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.option {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.option h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.option p {
+  font-size: 13px;
+  color: #555;
+}
+
+.quote-cta {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.quote-cta img {
+  width: 100%;
+}
+
+.quote-cta1 img {
+  width: 80%;
+  margin: -5px;
+}
+
+
+
+/* 契約量セクション */
+.contract {
+  background: url('images/Group\ 283\ \(4\).webp') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.contract-img img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contract-box {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.point {
+  background: #004b9b;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contract-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contract-desc {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+.contract-box h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contract-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.contract-box th,
+.contract-box td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contract-box th {
+  background: #005bac;
+  color: #fff;
+  width: 60px;
+}
+
+.source {
+  font-size: 16px;
+  color: #fff;
+  text-align: right;
+  margin-left: 40px;
+  max-width: 720px;
+  margin-top: 5px;
+}
+
+.back-img img {
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+.reason {
+  background-color: #fff;
+  padding-top: 106px;
+  padding-bottom: 134px;
+  position: relative;
+}
+
+.reason-title-img {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+  z-index: 10;
+}
+
+.reason-title-img img {
+  width: 600px;
+  z-index: 10;
+  position: relative;
+}
+
+.reason .box {
+  position: relative;
+  z-index: 100;
+  align-items: center;
+  padding: 30px 0px;
+  color: white;
+}
+
+.right {
+  text-align: right;
+}
+
+.left img {
+  width: 80%;
+}
+
+.right img {
+  width: 80%;
+}
+
+.box .left,
+.box .right {
+  flex: 1;
+  z-index: 100;
+}
+
+.box h3 {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.box h3 span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box01 {
+  background-color: #eef4fc;
+  color: #333;
+}
+
+.box01 .map {
+  background: url('map_image.png') no-repeat center / contain;
+  height: 200px;
+}
+
+.box02 {
+  background-color: #0250a0;
+}
+
+.box02 .photo02 {
+  background: url('photo02.png') no-repeat center / cover;
+  height: 200px;
+}
+
+.box03 {
+  background-color: #004487;
+}
+
+.box03 .photo03 {
+  background: url('photo03.png') no-repeat center / cover;
+  height: 200px;
+}
+
+.number {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.misora-intro {
+  background: #f7f9fc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.misora-intro h4 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.misora-intro h4 span {
+  background: #004487;
+  color: white;
+  padding: 4px 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.misora-intro .note {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.features p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.features span {
+  font-size: 20px;
+  color: #0071e3;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+.point-title3 h3 {
+  font-size: 40px;
+  line-height: normal;
+  color: #4B4949;
+  margin: 0;
+  margin: 0px;
+}
+
+.misora {
+  color: #2154A7;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.misora-sub {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4B4949;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.misora-details {
+  display: flex;
+  justify-content: center;
+  /* 中央寄せ */
+  align-items: center;
+  /* 縦方向中央（必要に応じて） */
+  gap: 0px;
+  /* 画像同士の間隔 */
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.misora-details-img img {
+  width: 430px;
+}
+
+.misora-icon {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.misora-icon img {
+  width: 100%;
+}
+
+.section-header {
+  background: #2154A7;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 58%;
+}
+
+.section-header h1 {
+  font-size: 40px;
+  margin: 0;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 40px;
+  line-height: 1.4;
+}
+
+/* 共通機能ブロック */
+.feature-box {
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 990px;
+  margin-top: 50px;
+}
+
+.feature-box1 {
+  margin-bottom: 134px !important;
+}
+
+.corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 120px solid #2154A7;
+  border-right: 140px solid transparent;
+}
+
+.feature-inner {
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature-text {
+  flex: 1;
+  width: 200px;
+}
+
+.feature-text h2 {
+  color: #2154A7;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-text p {
+  font-size: 20px;
+  color: #4B4949;
+  text-align: center;
+  line-height: normal;
+}
+
+.feature-number img {
+  position: absolute;
+  width: 220px;
+  right: 0;
+  bottom: 0;
+}
+
+.feature-img {
+  flex-shrink: 0;
+  width: 380px;
+  text-align: center;
+}
+
+.feature-img img {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  position: relative;
+}
+
+.feature-img1 img {
+  width: 70%;
+  height: auto;
+
+}
+
+/* 導入実績 */
+.performance {
+  background: url('images/Group\ 285\ \(1\).webp') center/cover no-repeat;
+  color: #fff;
+  padding-top: 134px;
+  padding-bottom: 134px;
+  position: relative;
+}
+
+.performance::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.performance-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.performance-title {
+  margin: 0 auto;
+}
+
+.performance-title img {
+  width: 240px;
+}
+
+.performance-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4B4949;
+  margin-bottom: 70px;
+}
+
+.result-box {
+  background: #2154A7;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 100px;
+  border-radius: 5px;
+}
+
+.result-balloon {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: -60px;
+}
+
+.result-balloon img {
+  width: 700px;
+}
+
+.result-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.result-percent {
+  font-size: 68px;
+  font-weight: normal;
+}
+
+.result-percent img {
+  width: 228px;
+  padding-right: 20px;
+}
+
+.result-chart img {
+  width: 340px;
+}
+
+
+/* FAQ セクション */
+.faq-title-img img {
+  width: 400px;
+}
+
+.faq-title-img {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.faq-section {
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #E9F0FB;
+  padding-top: 134px;
+  padding-bottom: 134px;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.faq-section h2 span {
+  background: #2154A7;
+  color: white;
+  padding: 5px 10px;
+}
+
+/* FAQ ブロック */
+.faq {
+
+  background: #fff;
+  overflow: hidden;
+  max-width: 990px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+/* 質問ボタン */
+.faq-question {
+  width: 100%;
+  background: #1d4fa0;
+  color: white;
+  font-size: 24px;
+  padding: 21px 5px;
+  padding-left: 35px;
+  border: none;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-question.active {
+  background: #2154A7;
+}
+
+/* プラス/マイナスマーク */
+.faq-question .toggle-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+}
+
+/* 答え部分 */
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0px 80px;
+  font-size: 20px;
+  background: #fff;
+  color: #4B4949;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  letter-spacing: 1.5px;
+}
+
+/* 開いたとき */
+.faq-answer.open {
+  padding: 34px 80px;
+  /* max-height は JavaScript が自動設定します */
+}
+
+/* NEWS セクション */
+.news-section {
+  background: white;
+  text-align: center;
+  padding-top: 106px;
+  padding-bottom: 106px;
+}
+
+.news-box {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.news-box1 {
+  text-align: left;
+  margin-left: 150px;
+}
+
+.news-section h3 {
+  color: #2154A7;
+  font-size: 56px;
+  margin: 0px;
+}
+
+.news-section .date {
+  font-size: 12px;
+  color: #888;
+}
+
+.news-section .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.news-section .text {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.news-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.news-link:hover .title,
+.news-link:hover .text {
+  text-decoration: underline;
+}
+
+.readmore img {
+  width: 140px;
+}
+
+.readmore {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+
+.estimate-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4810C;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 38px 40px;
+  border-radius: 100px;
+  gap: 15px;
+  box-shadow: 0 7px 0 #975103eb;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+}
+
+.estimate-button:hover {
+  background-color: #F4810C;
+  transform: translateY(4px);
+  /* 下に2px沈む */
+  box-shadow: 0 0px 0 #0000005c;
+}
+
+.estimate-button {
+  font-size: 50px;
+}
+
+.syort {
+  font-size: 40px;
+}
+
+.estimate-button .finger-icon {
+  height: 48px;
+  width: auto;
+}
+
+.estimate-button .finger-icon {
+  height: 68px;
+  width: auto;
+}
+
+
+/* 上部青背景 */
+.contact-section .contact-top {
+  background-color: #2154A7;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-bottom: 130px;
+}
+
+/* フォーム全体 */
+.contact-box {
+  background: white;
+  max-width: 700px;
+  margin: -50px auto 50px;
+  padding: 40px 30px;
+
+}
+
+.contact-top p {
+  margin: 0px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* 見出し */
+.contact-box h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.contact-box h2 span {
+  background: #2154A7;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+/* 各入力ブロック */
+form label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ボタン */
+form button {
+  display: block;
+  width: 250px;
+  margin: 50px auto 0;
+  background-color: #f5821f;
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #975103eb;
+  transition: all 0.2s ease;
+  transform: translateY(0);
+  font-weight: bold;
+
+}
+
+
+
+
+form button:hover {
+  transform: translateY(4px);
+  /* 下に2px沈む */
+  box-shadow: 0 0px 0 #975103eb;
+}
+
+/* フッター（ロゴ） */
+.footer {
+  background: #2154A7;
+  text-align: center;
+  padding: 60px 0;
+  padding-top: 140px;
+  position: relative;
+  margin-top: -140px;
+}
+
+.footer img {
+  height: 110px;
+}
+
+.contact-box {
+  background: white;
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 60px 30px;
+
+  position: relative;
+  top: -80px;
+  /* ← 上に持ち上げて重ねる */
+  z-index: 2;
+}
+
+.contact-title-img img {
+  width: 320px !important;
+  margin-bottom: 30px;
+}
+
+.contact-title-img {
+  text-align: center;
+}
+
+.contact-section .form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #4B4949;
+}
+
+.contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group select {
+  background-color: #f2f2f2;
+  /* ← グレー背景に */
+  border: none
+}
+
+#prefecture {
+  color: #4B4949;
+}
+
+.form-box select {
+  background-color: #fff;
+  /* ← グレー背景に */
+  border: none;
+  color: #4B4949;
+}
+
+.form-box input {
+  background-color: #fff;
+  /* ← グレー背景に */
+  border: none;
+
+}
+
+.form-box form button {
+  display: block;
+  width: 250px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 969px) {
+
+  .contact-top p {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .contact-title-img img {
+    width: 60% !important;
+    margin-bottom: 20px;
+  }
+
+  .contact-box {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px;
+
+    position: relative;
+    top: -80px;
+    /* ← 上に持ち上げて重ねる */
+    z-index: 2;
+  }
+
+  .footer {
+    background: #2154A7;
+    text-align: center;
+    padding: 60px 0;
+    padding-top: 120px;
+    position: relative;
+    margin-top: -160px;
+  }
+
+  .footer img {
+    height: 70px;
+  }
+
+  .misora-details {
+    display: block;
+  }
+
+  .result-balloon img {
+    width: 90%;
+  }
+
+  .solution-banner img {
+    width: 90%;
+  }
+
+  .solution-bg {
+    width: 100%;
+    display: block;
+    height: 350px;
+  }
+
+  .solution-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .reason-text p {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: bold;
+    z-index: 10;
+    position: relative;
+    color: #4B4949;
+    line-height: 1.3;
+    padding: 10px;
+  }
+
+  .reason-text .highlight {
+    color: #2154A7;
+    font-size: 25px;
+  }
+
+  .highlight1 {
+    font-size: 34px !important;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  .title1-img img {
+    width: 95%;
+    margin-bottom: 23px;
+  }
+
+  .trouble-title-img img {
+    width: 85%;
+  }
+
+  .reason-title-img img {
+    width: 85%;
+  }
+
+  .misora-details-img img {
+    width: 95%;
+  }
+
+  .faq-title-img img {
+    width: 75%;
+  }
+
+  .news-box {
+    display: block;
+  }
+
+  .worry-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4B4949;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .worry-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background-color: #2154A7;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 0px;
+    margin: 0px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+
+  .worry-subtitle span {
+    font-size: 37px;
+    line-height: 1.3;
+    letter-spacing: 2px !important;
+  }
+
+  .worries {
+    text-align: center;
+    background-color: #E9F0FB;
+    padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  .reasons {
+    padding: 15px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .reason-item {
+    display: block;
+  }
+
+  .reason-item img {
+    width: 100%;
+    height: auto;
+    margin: -7px;
+  }
+
+  .reason-text .number {
+    right: 0;
+    font-size: 115px;
+    bottom: 0px;
+    line-height: 61px;
+
+  }
+
+  .reason-text .number1 {
+    right: 0;
+    font-size: 115px;
+    bottom: 0px;
+    line-height: 60px;
+  }
+
+  .support-detail {
+    background: #EFEFEF;
+    padding: 70px 22px;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .point-title h3 {
+    font-size: 24px;
+    line-height: normal;
+    color: #4B4949;
+    margin: 0;
+  }
+
+  .point-title h3 span {
+    font-size: 23px;
+  }
+
+  .point-title {
+    margin: 0 auto 20px;
+  }
+
+  .point-title .lead {
+    color: #2154A7;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .point-title .sub {
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .top-icons {
+    display: flex;
+    flex-wrap: nowrap !important;
+  }
+
+  .icon-item {
+    width: 100%;
+  }
+
+  .icon-item-last {
+    width: 50%;
+  }
+
+  .note {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .feature-img {
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon-item {
+    font-size: 20px;
+  }
+
+  .icon-item span {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4B4949;
+    font-weight: normal;
+    text-align: left;
+    width: 100%;
+  }
+
+  .solution-bg2 {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    bottom: -75px;
+  }
+
+  .trouble {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: -1;
+    background-color: #fff;
+  }
+
+  .worry-title1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B4949;
+    margin: 0;
+    text-align: center;
+  }
+
+  .worry-subtitle1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B4949;
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  .nationwide {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 35px;
+  }
+
+  .plan-box {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 10px;
+    display: grid;
+    ;
+  }
+
+  .quote-cta {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .option {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .plas img {
+    width: 40px;
+    margin: 0 auto;
+  }
+
+  .packages-sub-img img {
+    position: relative;
+    left: 0;
+    width: 95%;
+    margin-bottom: 40px;
+  }
+
+  .plas {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .quote-cta1 img {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+
+  .quote-cta img {
+    width: 90%;
+  }
+
+  .point-img img {
+    width: 160px;
+  }
+
+  .worry-title2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+
+  .worry-subtitle2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .contract {
+    padding: 60px 15px;
+    padding-bottom: 76px;
+  }
+
+  .source {
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    max-width: 720px;
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  .reason .box {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px;
+    color: white;
+  }
+
+  .box1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px !important;
+    color: white;
+  }
+
+  .left img {
+    width: 95%;
+  }
+
+  .reason {
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+
+  .point-title3 h3 {
+    font-size: 23px;
+  }
+
+  .feature-box1 {
+    margin-bottom: 100px !important;
+  }
+
+  .misora {
+    color: #2154A7;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 25px;
+  }
+
+  .misora-sub {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4B4949;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .misora-details-img {
+    margin-bottom: 5px;
+  }
+
+  .misora-details {
+    margin-bottom: 35px;
+  }
+
+  .misora-sub1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4B4949;
+    margin: 0px;
+    margin-bottom: 35px;
+  }
+
+  .section-header h1 {
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 20px;
+    line-height: 1.4;
+  }
+
+  .section-header {
+    background: #2154A7;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    width: 78%;
+  }
+
+  .corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #2154A7;
+    border-right: 80px solid transparent;
+  }
+
+  .feature-inner {
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .feature-box {
+    background: #fff;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 990px;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .feature-text h2 {
+    color: #2154A7;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .feature-text p {
+    font-size: 16px;
+    color: #4B4949;
+    text-align: left;
+    line-height: normal;
+  }
+
+  .feature-number img {
+    position: absolute;
+    width: 140px;
+    right: 20px;
+    bottom: 0;
+  }
+
+  .feature-img img {
+    width: 90%;
+    height: auto;
+    z-index: 100;
+    position: relative;
+  }
+
+  .feature-img1 img {
+    width: 70%;
+  }
+
+  .performance {
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 76px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .performance-title img {
+    width: 160px;
+  }
+
+  .performance-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4B4949;
+    margin-bottom: 30px;
+  }
+
+  .result-balloon {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto
+  }
+
+  .result-flex img {
+    width: 100%;
+  }
+
+  .result-percent img {
+
+    padding-right: 20px;
+  }
+
+  .result-box {
+    background: #2154A7;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 100px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .faq {
+    background: #fff;
+    overflow: hidden;
+    max-width: 990px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .faq-title-img {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .faq-question {
+    font-size: 17px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.7;
+  }
+
+  .faq-section {
+    margin: 0 auto;
+    padding: 60px 15px;
+    background-color: #E9F0FB;
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .faq-answer.open {
+    padding: 34px 20px;
+  }
+
+  .faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+
+  .news-box1 {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .news-section {
+    background: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 76px;
+  }
+
+  .readmore img {
+    width: 100px;
+  }
+
+  .back-img img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+  }
+
+  .form-box {
+    background: #2154A7;
+    padding: 25px;
+    box-shadow: 0 3px 16px rgb(0 0 0 / 59%);
+    border-radius: 10px;
+    margin: auto;
+    margin: 20px;
+    margin-top: -100px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .title-img img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .estimate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f58220;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 100px;
+    gap: 0px;
+    box-shadow: 0 7px 0 #975103eb;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+    width: 95%;
+  }
+
+  .estimate-button:hover {
+    background-color: #e37110;
+    transform: translateY(4px);
+    /* 下に2px沈む */
+    box-shadow: 0 0px 0 #0000005c;
+  }
+
+  .estimate-button {
+    font-size: 24px;
+    align-items: end;
+    line-height: 1.3;
+  }
+
+  .syort {
+    font-size: 20px;
+  }
+
+  .estimate-button .finger-icon {
+    height: 45px;
+    width: auto;
+  }
+
+  .estimate-button .finger-icon {
+    height: 48px;
+    padding-bottom: 5px;
+    width: auto;
+  }
+
+  .contact-1 {
+    font-size: 30px;
+  }
+
+  .contact-2 {
+    font-size: 26px;
+  }
+
+  h1.contact-1 {
+    font-size: 45px !important;
+  }
+
+  p.contact-2 {
+    font-size: 36px !important;
+  }
+
+  #prefecture {
+    height: 32px;
+    color: #4B4949;
+  }
+
+  .pc {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 969px) {
+  .form-box {
+    background: #2154A7;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    color: #4B4949;
+  }
+
+  .contact-box .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-box .form-group label {
+    width: 150px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    text-align: left;
+    flex-shrink: 0;
+    font-size: 20px;
+  }
+
+  .contact-box .form-group input,
+  .contact-box .form-group select {
+    flex: 1;
+  }
+
+  .contact-box .form-group2 label {
+    width: 230px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    text-align: left;
+    flex-shrink: 0;
+    font-size: 20px;
+  }
+
+  .contact-box form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .sp {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .header_logo {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header_logo {
+    left: 7px;
+    top: -35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_logo {
+    width: 159px;
+    height: 84px;
+  }
+}
